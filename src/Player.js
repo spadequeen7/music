@@ -32,13 +32,13 @@ const Player = (props) => {
     setIsPlaying((prevState) => !prevState);
   };
 
-  const handlePlayLast = () => {
-    if (currentIndex === 0) {
-      setCurrentIndex(playList.length - 1);
-    } else {
-      setCurrentIndex((prevState) => prevState - 1);
-    }
-  };
+  // const handlePlayLast = () => {
+  //   if (currentIndex === 0) {
+  //     setCurrentIndex(playList.length - 1);
+  //   } else {
+  //     setCurrentIndex((prevState) => prevState - 1);
+  //   }
+  // };
 
   const handlePlayNext = () => {
     if (currentIndex === playList.length - 1) {
@@ -46,6 +46,7 @@ const Player = (props) => {
     } else {
       setCurrentIndex((prevState) => prevState + 1);
     }
+    setIsPlaying(true);
   };
 
   return (
@@ -101,7 +102,11 @@ const Player = (props) => {
         </Box>
       </Card>
       <Box sx={{ position: "absolute", bottom: "0", zIndex: "-1" }}>
-        <ReactPlayer url={playList[currentIndex].url} playing={isPlaying} />
+        <ReactPlayer
+          url={playList[currentIndex].url}
+          playing={isPlaying}
+          onEnded={handlePlayNext}
+        />
       </Box>
     </Container>
   );
