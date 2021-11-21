@@ -1,26 +1,51 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Container, Card, Box, CardMedia, IconButton } from "@mui/material";
+import {
+  Container,
+  Card,
+  Box,
+  CardMedia,
+  IconButton,
+  Typography,
+  LinearProgress,
+} from "@mui/material";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
+import PauseIcon from "@mui/icons-material/Pause";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlayCircle,
+  faPause,
+  faStepBackward,
+  faStepForward,
+} from "@fortawesome/free-solid-svg-icons";
+import { shuffle } from "lodash";
+import { data } from "./playlist";
 
 const Player = (props) => {
-  const playList = [
-    {
-      name: "Red",
-      artist: "Taylor Swift",
-      url: `https://firebasestorage.googleapis.com/v0/b/music-6fc30.appspot.com/o/02%20Red%20(Taylor's%20Version).mp3?alt=media&token=2b343a47-1f3d-4d23-9582-6a73d738f9fb`,
-    },
-  ];
-
   const [isPlaying, setIsPlaying] = React.useState(false);
-
-  const currentPlay = playList[0];
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [playList, setPlayList] = React.useState(shuffle(data));
 
   const handlePlay = () => {
-    console.log("Play");
     setIsPlaying((prevState) => !prevState);
+  };
+
+  const handlePlayLast = () => {
+    if (currentIndex === 0) {
+      setCurrentIndex(playList.length - 1);
+    } else {
+      setCurrentIndex((prevState) => prevState - 1);
+    }
+  };
+
+  const handlePlayNext = () => {
+    if (currentIndex === playList.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex((prevState) => prevState + 1);
+    }
   };
 
   return (
@@ -42,22 +67,41 @@ const Player = (props) => {
         }}
       >
         <CardMedia component="img" image="radio.png" />
+        <Box sx={{ marginTop: "24px" }}>
+          <Typography variant="h6">{playList[currentIndex].name}</Typography>
+          <Typography variant="subtitle2" sx={{ opacity: 0.5 }}>
+            {playList[currentIndex].artist}
+          </Typography>
+        </Box>
         <Box
-          sx={{ display: "flex", justifyContent: "center", marginTop: "32px" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "24px",
+            columnGap: "24px",
+            height: "40px",
+          }}
         >
-          <IconButton>
-            <SkipPreviousIcon fontSize="large" />
+          {/* <IconButton onClick={handlePlayLast}>
+            <FontAwesomeIcon icon={faStepBackward} />
+          </IconButton> */}
+          <IconButton
+            onClick={handlePlay}
+            sx={{ fontSize: isPlaying ? "24px" : "40px", width: "32px" }}
+          >
+            {isPlaying ? (
+              <FontAwesomeIcon icon={faPause} />
+            ) : (
+              <FontAwesomeIcon icon={faPlayCircle} />
+            )}
           </IconButton>
-          <IconButton onClick={handlePlay}>
-            <PlayArrowIcon fontSize="large" />
-          </IconButton>
-          <IconButton>
-            <SkipNextIcon fontSize="large" />
-          </IconButton>
+          {/* <IconButton onClick={handlePlayNext}>
+            <FontAwesomeIcon icon={faStepForward} />
+          </IconButton> */}
         </Box>
       </Card>
       <Box sx={{ position: "absolute", bottom: "0", zIndex: "-1" }}>
-        <ReactPlayer url={currentPlay.url} playing={isPlaying} />
+        <ReactPlayer url={playList[currentIndex].url} playing={isPlaying} />
       </Box>
     </Container>
   );
