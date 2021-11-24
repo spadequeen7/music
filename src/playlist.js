@@ -84,4 +84,109 @@ export const data = [
     artist:"陈绮贞",
     url:"https://storage.googleapis.com/fm1129/%E9%99%88%E7%BB%AE%E8%B4%9E%20-%20%E6%88%91%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%BD%A0%E6%97%B6%E7%9A%84%E5%86%85%E5%BF%83%E6%B4%BB%E5%8A%A8.mp3"
   },
+  {
+    name:"everything i wanted",
+    artist:"Billie Eilish",
+    url:"https://storage.googleapis.com/fm1129/Billie%20Eilish%20-%20everything%20i%20wanted.mp3"
+  },
+  {
+    name:"Redbone",
+    artist:"Childish Gambino",
+    url:"https://storage.googleapis.com/fm1129/Childish%20Gambino%20-%20Redbone.mp3"
+  },
+  {
+    name:"Lover Boy 88",
+    artist:"Higher Brothers,Phum Viphurit",
+    url:"https://storage.googleapis.com/fm1129/Higher%20Brothers%2CPhum%20Viphurit%20-%20Lover%20Boy%2088.mp3"
+  },
+  {
+    name:"白日",
+    artist:"King Gnu",
+    url:"https://storage.googleapis.com/fm1129/King%20Gnu%20-%20%E7%99%BD%E6%97%A5.mp3"
+  },
+  {
+    name:"不得不爱",
+    artist:"Lambert",
+    url:"https://storage.googleapis.com/fm1129/Lambert%20-%20%E4%B8%8D%E5%BE%97%E4%B8%8D%E7%88%B1.mp3"
+  },
+  {
+    name:"想说",
+    artist:"Lambert",
+    url:"https://storage.googleapis.com/fm1129/Lambert%20-%20%E6%83%B3%E8%AF%B4.mp3"
+  },
+  {
+    name:"Tonight",
+    artist:"Lambert,Demxntia",
+    url:"https://storage.googleapis.com/fm1129/Lambert%2CDemxntia%20-%20Tonight.mp3"
+  },
+  {
+    name:"Homage",
+    artist:"Mild High Club",
+    url:"https://storage.googleapis.com/fm1129/Mild%20High%20Club%20-%20Homage.mp3"
+  },
+  {
+    name:"stargazing",
+    artist:"sapientdream",
+    url:"https://storage.googleapis.com/fm1129/sapientdream%20-%20stargazing.mp3"
+  },
+  {
+    name:"放空",
+    artist:"大籽,Lil E,A1 TRIP",
+    url:"https://storage.googleapis.com/fm1129/%E5%A4%A7%E7%B1%BD%2CLil%20E%2CA1%20TRIP%20-%20%E6%94%BE%E7%A9%BA.mp3"
+  },
+  {
+    name:"形容",
+    artist:"沈以诚",
+    url:"https://storage.googleapis.com/fm1129/%E6%B2%88%E4%BB%A5%E8%AF%9A%20-%20%E5%BD%A2%E5%AE%B9.mp3"
+  },
+  {
+    name:"我的名字",
+    artist:"焦迈奇",
+    url:"https://storage.googleapis.com/fm1129/%E7%84%A6%E8%BF%88%E5%A5%87%20-%20%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97.mp3"
+  },
+  {
+    name:"Can't Take My Eyes Off You",
+    artist:"王若琳",
+    url:"https://storage.googleapis.com/fm1129/%E7%8E%8B%E8%8B%A5%E7%90%B3%20-%20Can't%20Take%20My%20Eyes%20Off%20You.mp3"
+  },
+  {
+    name:"暧昧",
+    artist:"王菲",
+    url:"https://storage.googleapis.com/fm1129/%E7%8E%8B%E8%8F%B2%20-%20%E6%9A%A7%E6%98%A7.mp3"
+  },
+  {
+    name:"大风吹",
+    artist:"王赫野",
+    url:"https://storage.googleapis.com/fm1129/%E7%8E%8B%E8%B5%AB%E9%87%8E%20-%20%E5%A4%A7%E9%A3%8E%E5%90%B9.mp3"
+  },
+  {
+    name:"Lemon",
+    artist:"米津玄師",
+    url:"https://storage.googleapis.com/fm1129/%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB%20-%20Lemon.mp3"
+  },
+  {
+    name:"光",
+    artist:"陈粒",
+    url:"https://storage.googleapis.com/fm1129/%E9%99%88%E7%B2%92%20-%20%E5%85%89.mp3"
+  },
+  {
+    name:"奇妙能力歌",
+    artist:"陈粒",
+    url:"https://storage.googleapis.com/fm1129/%E9%99%88%E7%B2%92%20-%20%E5%A5%87%E5%A6%99%E8%83%BD%E5%8A%9B%E6%AD%8C.mp3"
+  },
+  {
+    name:"小半",
+    artist:"陈粒",
+    url:"https://storage.googleapis.com/fm1129/%E9%99%88%E7%B2%92%20-%20%E5%B0%8F%E5%8D%8A.mp3"
+  },
+  {
+    name:"虚拟",
+    artist:"陈粒",
+    url:"https://storage.googleapis.com/fm1129/%E9%99%88%E7%B2%92%20-%20%E8%99%9A%E6%8B%9F.mp3"
+  },
+  {
+    name:"彼个所在",
+    artist:"魏如萱",
+    url:"https://storage.googleapis.com/fm1129/%E9%AD%8F%E5%A6%82%E8%90%B1%20-%20%E5%BD%BC%E4%B8%AA%E6%89%80%E5%9C%A8.mp3"
+  },
 ];
