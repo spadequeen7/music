@@ -189,4 +189,19 @@ export const data = [
     artist:"魏如萱",
     url:"https://storage.googleapis.com/fm1129/%E9%AD%8F%E5%A6%82%E8%90%B1%20-%20%E5%BD%BC%E4%B8%AA%E6%89%80%E5%9C%A8.mp3"
   },
+  {
+    name:"R&B All Night",
+    artist:"KnowKnow,Higher Brothers",
+    url:"https://storage.googleapis.com/fm1129/KnowKnow%2CHigher%20Brothers%20-%20R%26B%20All%20Night.mp3"
+  },
+  {
+    name:"克卜勒",
+    artist:"孙燕姿",
+    url:"https://storage.googleapis.com/fm1129/%E5%AD%99%E7%87%95%E5%A7%BF%20-%20%E5%85%8B%E5%8D%9C%E5%8B%92.mp3"
+  },
+  {
+    name:"达尔文",
+    artist:"蔡健雅",
+    url:"https://storage.googleapis.com/fm1129/%E8%94%A1%E5%81%A5%E9%9B%85%20-%20%E8%BE%BE%E5%B0%94%E6%96%87.mp3"
+  },
 ];
