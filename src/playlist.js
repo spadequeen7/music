@@ -204,4 +204,44 @@ export const data = [
     artist:"蔡健雅",
     url:"https://storage.googleapis.com/fm1129/%E8%94%A1%E5%81%A5%E9%9B%85%20-%20%E8%BE%BE%E5%B0%94%E6%96%87.mp3"
   },
+  {
+    name:"Dancin (Krono Extended Remix)",
+    artist:"Aaron Smith",
+    url:"https://storage.googleapis.com/fm1129/Aaron%20Smith%20-%20Dancin%20(Krono%20Extended%20Remix).mp3"
+  },
+  {
+    name:"Love You Like A Love Song",
+    artist:"Selena Gomez & The Scene",
+    url:"https://storage.googleapis.com/fm1129/Selena%20Gomez%20%26%20The%20Scene%20-%20Love%20You%20Like%20A%20Love%20Song.mp3"
+  },
+  {
+    name:"刻在我心底的名字",
+    artist:"卢广仲",
+    url:"https://storage.googleapis.com/fm1129/%E5%8D%A2%E5%B9%BF%E4%BB%B2%20-%20%E5%88%BB%E5%9C%A8%E6%88%91%E5%BF%83%E5%BA%95%E7%9A%84%E5%90%8D%E5%AD%97.mp3"
+  },
+  {
+    name:"保留",
+    artist:"郭顶",
+    url:"https://storage.googleapis.com/fm1129/%E9%83%AD%E9%A1%B6%20-%20%E4%BF%9D%E7%95%99.mp3"
+  },
+  {
+    name:"想着你",
+    artist:"郭顶",
+    url:"https://storage.googleapis.com/fm1129/%E9%83%AD%E9%A1%B6%20-%20%E6%83%B3%E7%9D%80%E4%BD%A0.mp3"
+  },
+  {
+    name:"水星记",
+    artist:"郭顶",
+    url:"https://storage.googleapis.com/fm1129/%E9%83%AD%E9%A1%B6%20-%20%E6%B0%B4%E6%98%9F%E8%AE%B0.mp3"
+  },
+  {
+    name:"我在人民广场吃炸鸡",
+    artist:"阿肆",
+    url:"https://storage.googleapis.com/fm1129/%E9%98%BF%E8%82%86%20-%20%E6%88%91%E5%9C%A8%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%90%83%E7%82%B8%E9%B8%A1.mp3"
+  },
+  {
+    name:"热爱105°C的你",
+    artist:"阿肆",
+    url:"https://storage.googleapis.com/fm1129/%E9%98%BF%E8%82%86%20-%20%E7%83%AD%E7%88%B1105%C2%B0C%E7%9A%84%E4%BD%A0.mp3"
+  },
 ];
